@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +5,10 @@
 }
 
 /* Styling for h1, h2, h3  */
-.h1, .h2, .h3 {
+.h1 , .h2, .h3 {
   text-transform: uppercase;
   font-weight: 400;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: black;
 }
 
@@ -79,6 +78,7 @@ a {
 
 .h-nav__logo-pic {
   width: 202px;
+  height: 59px;
   object-fit: cover;
 }
 
@@ -88,7 +88,16 @@ a {
   justify-content: space-between;
   margin-top: 69px;
   width: 720px;
-  gap: 30px; /* ??????? */
+  gap: 30px;
+  /* ??????? */
+}
+.h-nav__menu-link--decoration{
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 2s ease;
+}
+
+.h-nav__menu-link--decoration:hover{
+  box-shadow: 0 2px 0 rgb(255, 255, 255);
 }
 
 .h-nav__menu .h-nav__menu-item {
@@ -105,10 +114,10 @@ a {
   width: 720px;
 }
 
-.hero__left--offset {
-  margin-bottom: 50px;
-  margin-left: 190px;
-  margin-right: 116px;
+.hero__h1--margin {
+  margin-bottom: 40px;
+  margin-left: 130px;
+  margin-right: 90px;
 }
 
 .hero__right {
