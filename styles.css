@@ -1,31 +1,31 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal;
-  font-size: 60px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 36px;
-  text-decoration: none;
-
-}
-
-h3 {
-  font-size: 20px;
-  text-decoration: none;
+/* Styling for h1, h2, h3  */
+.h1, .h2, .h3 {
   text-transform: uppercase;
   font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: black;
 }
 
+.h1 {
+  font-size: 60px;
+}
+
+.h2 {
+  font-size: 36px;
+}
+
+.h3 {
+  font-size: 20px;
+}
+
+/* General list and link  */
 li {
   list-style: none;
 }
@@ -34,9 +34,9 @@ a {
   text-decoration: none;
 }
 
+/* Hero section  */
 .hero {
   max-width: 1654px;
-  padding-left: 113px;
   padding-right: 0;
   display: flex;
   justify-content: space-between;
@@ -51,6 +51,7 @@ a {
 }
 
 .hero__background-decoration {
+  content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(104, 183, 56, 0.85);
@@ -58,6 +59,7 @@ a {
   opacity: 0.5;
 }
 
+/* Navigation wrapper + logo */
 .h-nav__wrapper {
   z-index: 999;
   flex-direction: row;
@@ -71,10 +73,8 @@ a {
 .h-nav__logo {
   margin-top: 53px;
   margin-left: 110px;
-  margin-bottom: 111px;
   margin-right: 520px;
   padding: 0;
-  ;
 }
 
 .h-nav__logo-pic {
@@ -82,11 +82,13 @@ a {
   object-fit: cover;
 }
 
+/* Navigation menu */
 .h-nav__menu {
   display: flex;
   justify-content: space-between;
   margin-top: 69px;
   width: 720px;
+  gap: 30px; /* ??????? */
 }
 
 .h-nav__menu .h-nav__menu-item {
@@ -94,33 +96,22 @@ a {
   height: 30px;
 }
 
-.h-nav__menu-item .h3 {
+.h-nav__menu-item--white .h3 {
   color: white;
-  text-transform: uppercase;
 }
 
-.h-nav__menu-item1 {
-  gap: 37px;
-}
-
-.h-nav__menu-item2 {
-  gap: 32px;
-}
-
-.h-nav__menu-item3 {
-  gap: 110px;
-}
-.hero__left--offset{
-  margin: 0 auto;
-  margin-left: 113px;
-}
-
-.hero__h1{
-  width: 414px;
-  hyphens: 120px;
-}
+/* hero left and right  */
 .hero__right {
   width: 720px;
+}
+
+.hero__left--offset {
+  margin-bottom: 50px;
+  margin-left: 190px;
+  margin-right: 116px;
+}
+
+.hero__right {
   position: relative;
 }
 
@@ -129,16 +120,17 @@ a {
   top: 141px;
   right: 330px;
   bottom: 54px;
-
 }
 
 .hero__background-image {
   overflow: hidden;
   width: 720px;
 }
-.hero__text{
+
+.hero__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: 112px;
 }
